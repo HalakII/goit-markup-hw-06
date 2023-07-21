@@ -257,15 +257,18 @@ img {
 
 .section-team {
   background-color: var(--cloud-color);
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .team-images {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
+  justify-content: center;
+  align-items: center;
 }
+
 .team-images-item {
-  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-color);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -783,11 +786,15 @@ input:checked + .label-privacy > .checkbox-span {
     flex-direction: column;
     margin-left: auto;
   }
+  /*---section-title---*/
   .page-title {
     margin-bottom: 36px;
     max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
   }
-  /*---section-title---*/
+
+  /*---section-description---*/
   .description-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -806,20 +813,22 @@ input:checked + .label-privacy > .checkbox-span {
     text-align: left;
   }
 
-  .page-title {
-    font-size: 56px;
-    line-height: 1.07;
-  }
   /*---section team---*/
+  .team-images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+  .team-images-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
 }
 
 /*-----------------------------------------------full screen-------------------------------------------*/
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
-  }
-  .page-title {
-    margin-bottom: 48px;
   }
 
   /*---header---*/
@@ -828,6 +837,10 @@ input:checked + .label-privacy > .checkbox-span {
     gap: 40px;
   }
   /*---section-title---*/
+  .page-title {
+    margin-bottom: 48px;
+  }
+  /*---section-description---*/
   .basic-description {
     padding: 120px 0;
   }
@@ -863,12 +876,27 @@ input:checked + .label-privacy > .checkbox-span {
     font-weight: 400;
     width: 264px;
   }
+  /*---section team---*/
+  .section-team {
+    padding: 120px 0;
+  }
+  .team-images {
+    gap: 24px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .team-images-item {
+    width: calc((100% - 72px) / 4);
+  }
 }
 /*---invisible content---*/
 @media screen and (max-width: 1157px) {
   .basic-description .icon {
     display: none;
   }
+
   .section-image {
     display: none;
   }

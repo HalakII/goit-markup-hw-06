@@ -154,8 +154,8 @@ img {
   color: var(--white-color);
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 48px;
-  max-width: 496px;
+  margin-bottom: 72px;
+  max-width: 320px;
 }
 
 .button-main {
@@ -783,6 +783,10 @@ input:checked + .label-privacy > .checkbox-span {
     flex-direction: column;
     margin-left: auto;
   }
+  .page-title {
+    margin-bottom: 36px;
+    max-width: 496px;
+  }
   /*---section-title---*/
   .description-list {
     flex-direction: row;
@@ -801,6 +805,7 @@ input:checked + .label-privacy > .checkbox-span {
   .basic-description .third-title {
     text-align: left;
   }
+
   .page-title {
     font-size: 56px;
     line-height: 1.07;
@@ -813,6 +818,10 @@ input:checked + .label-privacy > .checkbox-span {
   .container {
     max-width: 1158px;
   }
+  .page-title {
+    margin-bottom: 48px;
+  }
+
   /*---header---*/
   .contacts {
     flex-direction: row;

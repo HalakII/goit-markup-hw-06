@@ -552,7 +552,7 @@ img {
   /* align-items: center; */
   justify-content: flex-start;
   flex-direction: column;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 48px;
 }
 
@@ -1048,6 +1048,7 @@ input:checked + .label-privacy > .checkbox-span {
   }
   .buttons {
     margin-bottom: 72px;
+    max-width: 1157px;
   }
   .portfolio-images {
     column-gap: 24px;
